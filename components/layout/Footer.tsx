@@ -1,61 +1,63 @@
-import Link from "next/link";
+import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="bg-neutral-900 text-neutral-400 py-12">
-      <div className="max-w-6xl mx-auto px-4 md:px-8">
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-neutral-800">
-
-          {/* Brand */}
-          <div className="flex flex-col gap-3">
-            <p className="text-white font-bold text-xl">Dyal Dar 🍔</p>
-            <p className="text-sm leading-relaxed">
-              Fast food bnin, fait maison. Maarif, Casablanca.
+    <footer className="border-t border-neutral-900 bg-neutral-950 py-12 text-zinc-400">
+      <div className="mx-auto max-w-6xl px-4 md:px-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          
+          {/* Brand Info */}
+          <div>
+            <h3 className="text-lg font-bold text-white">Dyal Dar</h3>
+            <p className="mt-2 text-sm text-zinc-400">
+              Fast-food 100% fait maison au Maarif, Casablanca.
             </p>
           </div>
 
-          {/* Links */}
-          <div className="flex flex-col gap-3">
-            <p className="text-white font-semibold text-sm uppercase tracking-widest">Navigation</p>
-            <div className="flex flex-col gap-2 text-sm">
-              <Link href="#menu" className="hover:text-white transition-colors">Menu</Link>
-              <Link href="#galerie" className="hover:text-white transition-colors">Galerie</Link>
-              <Link href="#apropos" className="hover:text-white transition-colors">À propos</Link>
-              <Link href="#contact" className="hover:text-white transition-colors">Contact</Link>
-            </div>
+          {/* Navigation Links */}
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white">
+              Navigation
+            </h4>
+            <ul className="mt-3 space-y-2 text-sm">
+              <li>
+                <Link 
+                  href="/menu" 
+                  className="transition-colors hover:text-white"
+                >
+                  Notre Menu
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/#apropos" 
+                  className="transition-colors hover:text-white"
+                >
+                  À propos
+                </Link>
+              </li>
+            </ul>
           </div>
 
-          {/* Contact */}
-          <div className="flex flex-col gap-3">
-            <p className="text-white font-semibold text-sm uppercase tracking-widest">Contact</p>
-            <div className="flex flex-col gap-2 text-sm">
-              <p>+212 661 000 000</p>
-              <p>dyaldar@gmail.com</p>
-              <p>23 Rue Abou Inane, Maarif</p>
-              <p>Casablanca, Maroc</p>
-            </div>
+          {/* Contact / Location */}
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white">
+              Contact
+            </h4>
+            <p className="mt-3 text-sm text-zinc-400">
+              Maarif, Casablanca
+            </p>
+            <p className="mt-1 text-sm text-zinc-400">
+              WhatsApp: +212 6 61 00 00 00
+            </p>
           </div>
 
         </div>
 
-        {/* Bottom */}
-        <div className="pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-          <p>© 2024 Dyal Dar. Tous droits réservés.</p>
-          <p>
-            Site réalisé par{" "}
-            
-              <a href="https://github.com/nezarelhatimi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#c0392b] hover:underline"
-            >
-              Nezar
-            </a>
-          </p>
+        <div className="mt-12 border-t border-neutral-900 pt-6 text-center text-xs text-zinc-500">
+          © {new Date().getFullYear()} Dyal Dar. Tous droits réservés.
         </div>
-
       </div>
     </footer>
-  );
+  )
 }

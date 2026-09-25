@@ -1,11 +1,10 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
 import Menu from "@/components/sections/Menu";
-import Gallery from "@/components/sections/Gallery";
-import About from "@/components/sections/About";
-import Contact from "@/components/sections/Contact";
+import About from "@/components/sections/AboutContact";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
+import AboutContact from "@/components/sections/AboutContact";
 
 export default function Home() {
   return (
@@ -13,9 +12,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Menu />
-      <Gallery />
-      <About />
-      <Contact />
+      
+      <AboutContact />
+      
       <Footer />
       <WhatsAppButton />
     </main>
