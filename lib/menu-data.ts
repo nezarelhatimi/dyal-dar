@@ -11,7 +11,7 @@ export type Item = {
   desc: string
   price: number
   slug: string
-  ingredients: string[]
+  ingredients?: string[]
 }
 
 export type Category = {
