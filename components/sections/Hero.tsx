@@ -34,14 +34,10 @@ export default function Hero() {
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-7 px-5 py-24 md:px-8">
 
         <div className="hero-item hero-item-1 flex">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-sm font-medium text-white/90 backdrop-blur-md">
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#c0392b] opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-[#c0392b]" />
-            </span>
-            Casablanca · Maarif
-          </span>
-        </div>
+  <span className="text-xs font-bold uppercase tracking-[0.25em] text-neutral-400">
+    <span className="text-[#c0392b]">●</span> Casablanca · Maarif
+  </span>
+</div>
 
         <h1 className="hero-item hero-item-2 max-w-3xl font-extrabold leading-[0.98] tracking-[-0.03em] text-white text-[clamp(3rem,7vw,5.5rem)]">
           Manger bien,
@@ -50,8 +46,9 @@ export default function Hero() {
         </h1>
 
         <p className="hero-item hero-item-3 max-w-md text-lg leading-relaxed text-neutral-300">
-          Fast food bnin, b les ingrédients frais — livrés ou à emporter. Commande directement sur WhatsApp.
-        </p>
+  Fast food bnin, b les ingrédients frais — livrés ou à emporter.
+  <span className="block mt-1">Commande directement sur WhatsApp.</span>
+</p>
 
         <div className="hero-item hero-item-4 flex flex-col gap-4 pt-1 sm:flex-row sm:flex-wrap">
           <Link

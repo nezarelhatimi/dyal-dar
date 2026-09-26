@@ -14,7 +14,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800/80 transition-all duration-300">
+    <nav className="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-zinc-800/80 transition-all duration-300">
       <div className="max-w-6xl mx-auto px-4 md:px-8 flex items-center justify-between h-20">
 
         {/* Logo matching Footer style */}
